@@ -1,0 +1,11 @@
+.backgro{
+    background-image:linear-gradient(to right, blue, rgb(7, 156, 156)); 
+    animation-name:wave; 
+    animation-duration:.5s; 
+    animation-iteration-count:infinite; 
+    animation-timing-function:cubic-bezier(0,0,.58,1);
+ }
+ @keyframes wave{
+    from{background-position:left bottom;}
+    to{background-position:right bottom;}
+ }

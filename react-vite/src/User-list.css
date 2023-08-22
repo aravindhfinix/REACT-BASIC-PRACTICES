@@ -1,0 +1,27 @@
+.background {
+   background-image:linear-gradient(to right, blue, cyan); 
+   background-size:200% auto; 
+   animation-name:wave; 
+   animation-duration:2s; 
+   animation-iteration-count:infinite; 
+   animation-timing-function:cubic-bezier(0,0,.58,1);
+}
+
+@keyframes wave{
+   from{background-position:left bottom;}
+   to{background-position:right bottom;}
+}
+
+.selected{
+  background-image:linear-gradient(to right, rgb(11, 94, 32), rgb(35, 235, 62)); 
+  background-size:200% auto; 
+  animation-name:wave2; 
+  animation-duration:.8s; 
+  animation-iteration-count:infinite; 
+  animation-timing-function:cubic-bezier(0,0,.58,1);
+}
+
+@keyframes wave2{
+  from{background-position:right bottom;}
+  to{background-position:left bottom;}
+}
